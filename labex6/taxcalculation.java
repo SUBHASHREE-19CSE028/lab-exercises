@@ -37,7 +37,7 @@ interface customer
 class employee1 implements customer
 {
     String gender,male,female,empname,empid;
-    double salary;
+    double salary,tax;
     @Override
     public void information()
     {
@@ -64,28 +64,49 @@ class employee1 implements customer
         if(salary<=190000)
         {
             if("male".equals(gender)&&"female".equals(gender))
-                 System.out.println("Tax: "+0+"%");
+            {
+                 tax=salary*0;
+                 System.out.println("Tax: "+tax);
+            }
         }
         else if(salary>190000 && salary<200000)
         {
             if("male".equals(gender))
-                 System.out.println("Tax: "+10+"%");
+            {
+                 tax=salary*(0.1);
+                 System.out.println("Tax: "+tax);
+            }
             else if("female".equals(gender))
-                 System.out.println("Tax: "+0+"%"); 
+            {
+                 tax=salary*0;
+                 System.out.println("Tax: "+tax); 
+            }
         }
         else if(salary>=200000 && salary<500000)
         {
             if("male".equals(gender))
-                 System.out.println("Tax: "+20+"%");
+            {
+                 tax=salary*(0.2);
+                 System.out.println("Tax: "+tax);
+            }
             else if("female".equals(gender))
-                 System.out.println("Tax: "+10+"%");
+            {
+                 tax=salary*(0.1);
+                 System.out.println("Tax: "+tax);
+            }
         }
         else if(salary>=500000)
         {
             if("male".equals(gender))
-                 System.out.println("Tax: "+25+"%");
+            {
+                 tax=salary*(0.25);
+                 System.out.println("Tax: "+tax);
+            }
             else if("female".equals(gender))
-                 System.out.println("Tax: "+20+"%");
+            {
+                 tax=salary*(0.2);
+                 System.out.println("Tax: "+tax);
+            }
         }    
     }
     
