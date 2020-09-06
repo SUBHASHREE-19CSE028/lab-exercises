@@ -21,12 +21,12 @@ public class employeesort {
         // TODO code application logic here
         ArrayList <employee> list=new ArrayList<>();
         employee obj[];
-        obj = new employee[2];
-        for(int i=0;i<2;i++)
+        obj = new employee[20];
+        for(int i=0;i<20;i++)
         {
             obj[i]=new employee(); 
         }
-        for(int i=0;i<2;i++)
+        for(int i=0;i<20;i++)
         {
             list.add(obj[i]);
         }
