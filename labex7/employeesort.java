@@ -31,8 +31,8 @@ public class employeesort {
             list.add(obj[i]);
         }
         
-        Collections.sort(list,new sortbysalary());
-        System.out.println("Sorted list by salary");
+        Collections.sort(list,new sortbyname());
+        System.out.println("Sorted list by name in descending order:");
         System.out.println(list);     //sorted list
         
                 
@@ -59,11 +59,11 @@ class employee
         return "\nName: "+name+"\tSalary: "+salary;
     }
 }
-class sortbysalary implements Comparator<employee>  
+class sortbyname implements Comparator<employee>  
 {
     @Override
     public int compare(employee e1,employee e2)
     {
-        return (int)(e2.salary-e1.salary);
+        return e2.name.compareTo(e1.name);
     }
 }
