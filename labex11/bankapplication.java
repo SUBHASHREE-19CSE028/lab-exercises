@@ -74,7 +74,7 @@ class credit implements Runnable
     {
         this.p=p;
         new Thread(this,"deposit").start();
-        /*try
+        try
         {
             Thread.sleep(6000);
             
@@ -82,7 +82,7 @@ class credit implements Runnable
         catch(InterruptedException e)
         {
             System.out.println(e);
-        }*/
+        }
                 
     }
     @Override
