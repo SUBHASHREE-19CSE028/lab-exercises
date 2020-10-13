@@ -81,7 +81,7 @@ class thread3_average extends Thread   //thread3-->average
 {
     thread1_Nvalues n; 
     thread1_Nvalues value[];
-    thread3_average(thread1_Nvalues n)
+    public thread3_average(thread1_Nvalues n)
     {
         this.n=n;
         new Thread(this).start();
