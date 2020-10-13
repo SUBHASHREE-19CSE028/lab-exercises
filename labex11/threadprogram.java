@@ -27,7 +27,7 @@ class thread1_Nvalues implements Runnable   //thread1--->getting n values
     Scanner obj=new Scanner(System.in);
     
     int n;
-    int value[],sum;
+    int value[];
     public thread1_Nvalues()
     {
        System.out.println("Enter the value of n:");
